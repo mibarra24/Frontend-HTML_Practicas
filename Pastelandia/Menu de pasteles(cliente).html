@@ -5,17 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros pasteles</title>
+
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          background-color: antiquewhite;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Estilo de header */
+      header {
+          background-color: #fcb7af;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+      }
+
+      /* Crear 2 columnas con la misma posición en la fila */
+      nav {
+          float: left;
+          width: 30%;
+          height: 300px;
+          /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px;
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+      /* Estilo de footer */
+      footer {
+          background-color: #b0f2c2;
+          padding: 10px;
+          text-align: center;
+          color: white;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+
+          nav,
+          article {
+              width: 100%;
+              height: auto;
+          }
+      }
+  </style>
+
 </head>
 
-<center><h1>¡TENEMOS LOS MEJORES PASTELES!</h1></center>
-
+<header><center><h1>¡TENEMOS LOS MEJORES PASTELES!</h1></center></header>
 
 <dl>
     <dt><h2>Pastel de Chocolate</h2></dt>
 
     <center><img src="./assets/Chocolate.jpg" alt="Chocolate" width="250px"></dl></center>
 
-    <dd>Pan tradicional con relleno y cubierta de chocolate, decorado con ojuelas del mismo sabor en el tope.</dd>
+    <dd>Pan tradicional sabor chocolate con relleno y cubierta de chocolate hersheys, decorado con ojuelas del mismo sabor en el tope.</dd>
 </dl>
 
 <dl>
@@ -23,9 +91,19 @@
 
     <center><img src="./assets/pasteldefresasconcremafacil.jpg" alt="Fresa" width="250px"</center>
 
-    <dd></dd>
+    <dd>Pan tradicional sabor fresa con relleno y cubierta de crema, decorado con fresas frescas</dd>
 
 </dl>
+
+<dl>
+  <dt><h2>Pastel de Fresa</h2></dt>
+
+  <center><img src="./assets/pastel-de-chantilly-de-vainilla-sin-mantequilla.jpg" alt="Fresa" width="250px"</center>
+
+  <dd>Pan tradicional sabor Vainilla con relleno y cubierta de crema chantilly, decorado con capas de vinilla en el tope</dd>
+
+</dl>
+
 
 <table>
     <tr>
@@ -54,10 +132,30 @@
       <td>$290</td>
     </tr>
     <tr>
+      <td>  </td>
+      <td>12</td>
+      <td>$380</td>
+  </tr>
+  <tr>
+      <td>  </td>
+      <td>16</td>
+      <td>$560</td>
+  </tr>
+    <tr>
         <td>Pastel de Vainilla</td>
         <td>8</td>
         <td>$250</td>
       </tr>
+      <tr>
+        <td>  </td>
+        <td>12</td>
+        <td>$340</td>
+    </tr>
+    <tr>
+        <td>  </td>
+        <td>16</td>
+        <td>$420</td>
+    </tr>
   </table>
 
 </html>
