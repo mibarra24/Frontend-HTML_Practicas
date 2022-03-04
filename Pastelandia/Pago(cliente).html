@@ -4,24 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresa tus datos</title>
+    <title>Ingresa tus bancarios</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fcb7af;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #b0c2f2;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
+<body>
+<section>
+    <header>
+        <center><h2>Pago de tu pedido</h2></center>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./Seleccion de pasteles(cliente).html">Pan</a></li>
+            <li><a href="./Seleccion Cubierta y relleno(cliente).html">Cubierta y relleno</a></li>
+            <li><a href="./Seleccion decoracion(cliente).html">Decoracion</a></li>
+        </ul>
+        <img src="./assets/Pastelandia_Logo.png" alt="logo" width="200px">
+    </nav>
 
-<center><h1>Pago de tu pedido</h1></center>
+    <article>
+        <center><h1>Ingresa tus datos para proceder al pago</h1></center>
 
-<center><h2>Ingresa tus datos para proceder al pago</h2></center>
+        <label for="Input1">Nombre completo:</label>
+        <input type="text" id="Input1" name="Input1"><br></br>
 
-<label for="Input1">Nombre completo:</label><br>
-    <input type="text" id="Input1" name="Input1"><br></br>
+        <label for="numero de telefono">Numero de telefono:</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
 
-<label for="tel1">Numero de telefono:</label><br>
-    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <label for="numero de tarjeta">Numero de tarjeta:</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
 
-<label for="correo1">Correo:</label><br>
-    <input type="email" id="correo1" name="correo1"><br></br>
+        <label for="credito o debito">Credito o debito</label>
+        <select name="credito o debito" id="credito o debito">
+            <option value="Credito">Credito</option>
+            <option value="Debito">Debito</option>
+        </select>
 
-<label for="numero1">Numero de pasteles:</label><br>
-    <input type="number" id="numero1" name="numero1"><br><br>
+        <label for="Mes y año de vencimiento">Mes y año de vencimiento:</label>
+        <select name="mes" id="mes">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+        
+        <select name="año" id="año">
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+        </select><br><br>
 
-    <center><a href="./Seleccion de pasteles(cliente).html">Continuar</a></center>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo1" name="correo1"><br></br>
+
+        <label for="Input1">Direccion de facturacion:</label>
+        <input type="text" id="Input1" name="Input1"><br></br>
+
+    </article>
+
+</section>
+</body>
+
+<footer>
+    <a>Continuar</a>
+</footer>
 </html>
