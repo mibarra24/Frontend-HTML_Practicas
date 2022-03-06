@@ -6,27 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresa tus datos</title>
     <style>
-         body {
+    
+      body {
           background-color: antiquewhite;
           font-family: Arial, Helvetica, sans-serif;
       }
       header {
-          background-color: #fcb7af;
-          padding: 30px;
-          text-align: center;
-          font-size: 35px;
-          color: white;
+            background-color: #fcb7af;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
       }
+
+      nav ul {
+        list-style-type: none;
+        background-color: antiquewhite;
+        padding: 0;
+    }
+
+    article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: antiquewhite;
+            height: 300px;
+        }
+    
+    footer {
+            background-color: antiquewhite;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
 
     </style>
 </head>
 
-<header>
-<center><h1>Haz tu pedido</h1></center>
+<body>
+<section>
+    <header>
+        <center><h1>Haz tu pedido</h1></center>
 
-<center><h3>Ingresa tus datos para registrar tu pedido</h3></center></header>
+        <center><img src="./assets/Pastelandia_Logo.png" alt="logo" width="100px"></center>
+        
+        <center><h3>Ingresa tus datos para registrar tu pedido</h3></center></header>
+        <br></br>
 
-<label for="Input1">Nombre completo:</label><br>
+<article><label for="Input1">Nombre completo:</label><br>
     <input type="text" id="Input1" name="Input1"><br></br>
 
 <label for="tel1">Numero de telefono:</label><br>
@@ -36,7 +63,15 @@
     <input type="email" id="correo1" name="correo1"><br></br>
 
 <label for="numero1">Numero de pasteles:</label><br>
-    <input type="number" id="numero1" name="numero1"><br><br>
+    <input type="number" id="numero1" name="numero1"><br></br>
+    
+    <center><a href="./Seleccion de pasteles(cliente).html">Continuar</a></footer>
+</center></article>
+</section>
+</body>
 
-    <center><a href="./Seleccion de pasteles(cliente).html">Continuar</a></center>
+    <footer>
+        <img src="./assets/Cake.png" alt="pastelera" width="300px">
+    </footer>
+
 </html>
